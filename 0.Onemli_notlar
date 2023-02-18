@@ -106,6 +106,8 @@ ctrl+w                                 Alt+f4 görevi görür. Açık pencereyi 
 ctrl+g                                 Konuma git.(7.satır yada 15.satır gibi.)
 ctrl+f                                 Sayfada bul.
 ctrl+e                                 Dosyayı bul.
+ctrl+s                                 Kaydet.
+ctrl+shift+s                           Farklı kaydet.
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
 git config --global user.email    
@@ -114,9 +116,11 @@ git config --global                    Global config
 git config --system                    Sistem config
 git config --local                     Local config
 git --list                             Listeler.
-git add .                              Github'a her şeyi aktarır.
+git add .                              Github'a her şeyi aktarır. Günceller.
 git add 8.Ebob.py                      Ebob dosyasını github'a yükler.
+git commit -m "İlk Comitim             Mesajın kısıltması. İlk Comit ile değişikliği kaydeder.
+#Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
 ------------------------Cmd Komutları-----------------------------
-cd C:\Users\....                       Cmd üzerinden dosya değiştirir.
+cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
 dir                                    Cmd üzerinden dosyayı listeler.
