@@ -1,0 +1,122 @@
+PyPI.com                               Python eklentilerinin aratıldığı site.
+Tuple                                  Tek seferlik veri depolamak için kullanılır. Yeniden tanımlamak zorunluluktur. Değiştirilemez. Parantez kullanılır.
+Set                                    Küme oluşturulmasına yarar. Sıralanamaz, küme içerisinde var mı yok mu onu gösterir.Birleştirme(union),kesişim(intersection) ve fark(difference) gibi matematiksel işlemleri için kullanılır. Süslü parantez kullanılır.
+.py                                    New file(yeni açılan dosyaları) python ile çalıştırmamızı sağlayan eklenti.
+\n                                     sonraki yazı için alt satıra geçer. (print("ali\n") şeklinde kullanılır.)
+Ctrl+C                                 Komutu while döngüsünü sonlandırır.
+While(True)                            Komutu sonsuz döngüye sokar.
+If/Elif/Else                           Koşul komutu.
+4boşluk/1tab                           Komut dizinini içine aktarma.
+break                                  While(True) döngüsünü sonlandırma.
+input("Değer giriniz.")                İçerisine argüman yazmak için kullanılır.
+#                                      Açıklama metni.
+int(Integar)                           Tam sayıları ifade ettiğimiz class.
+str(String)                            Metinler(ahmet, 5, sekiz) için kullanılan class.
+bool                                   True/False değerleri göstermek için kullanılan class.
+float                                  Kesirli sayılar için kullanılan class.
+complex                                Karmaşık sayıları ifade etmek için kullanılır.
+pip install                            PyPI kütüphanesinden eklenti indirme.
+range()                                Kaç kez tekrar edileceğini ifade etmek için kullanılır.
+random.randint(a,b)                    a ila b arasında random bir sayı verir.
+and                                    Mantık(ve) komutu.
+or                                     Mantık(veya) komutu.
+docs.python.org                        Pyhton komut kütüphanesi. 
+x.real                                 Gerçel değeri gösterir.
+math.gcd                               En büyük ortak böleni        
+python .\ebob.py                       Cmd üzerinden Ebob uygulamasını python ile açma komutu.
+print("{}gider{}'ye".format(a,b))      {} içerisine verdiğimiz değerleri ya da metinlerin gösterilmesini sağlar.(a gider b'ye)
+------------------------my_string-------------------------(9.String.kullanımı)
+length=len(my_string)                  Dizinin uzunluğunu ölçmek için kullanılan bir komut.
+print(lenght)                          Dizinin uzunluğunu gösteren komut.
+first_char = my_string[0]              Dizinin ilk harfi.
+last_char = my_string[-1]              Dizinin son harfi.
+substring = my_string[0:5]             İlk beş harfi.
+concatenated_str = str1 + " " + str2   İki stringi birleştirir.
+my_string.strip                        İlk ve sondaki boşlukları kaldırır.
+my_string.lower                        Bütün karakterleri küçük yazar.
+my_string.upper                        Bütün karakterleri büyük yazar. 
+my_string.replace("b","a")             b yerine a yazılır.
+print(my_string[::-1])                 my_string dizisinin içindeki metni tersten göstermesini sağlayan komut dizimi.
+[::-1]                                 [başlangıç,durma,adım sayısı]
+.split(',')
+-------------------------List-------------------------------(10.List kullanımı)
+List = [1,2,3]                         Birden fazla veri ve nesne barındırabilir.
+List = ["Muz","Armut]                  Metinlere tırnak eklenir.
+List.append(4)                         Listeye bir şey eklemek için kullanılır. Listenin sonuna ekler.    
+List[1] =  5                           İlk nesneyi değiştirir.(1'i 5 yapar.)
+List["Muz"] = "Karpuz"                 İlk nesneyi değiştirir.(Muz'u Karpuz yapar.)
+List.remove(1)                         Listedeki ilk nesneyi siler.
+List = List2                           List ve List2 aynı adreste olacağından dolayı yapılan herhangi bir değişiklik ikisini de etkilemektedir.
+List = List2.copy()                    List ve List2 farklı adreste olacağından dolayı yapılan değişiklikte birbirlerinden etkilenmeyecektir.
+print(id(List))                        id komutu ile Liste'nin bulunduğu konumu gösterir.
+List[-1] = 1                           Listenin sonuncu nesnesini değiştirir.(3'ü 1 yapar.)
+List[2:4] = [6,7]                      İkinci ve dördünücü nesneyi değiştir.(2'yi 6, 4'ü 7 yapar.)
+konum = List.index("Muz")              Bir ögenin konumunu bulma.(Muz 1.konumdadır.)
+for meyve in List:                     Listenin içindekileri sıralar.
+List.sort()                            Ögeleri sıralar.(1,2,3 ya da Alfabeye göre)
+List.reverse()                         Listenin içerisindekilerin sıralamasını tersten yazıyor.
+------------------------ Dictionary------------------------(11.Dictionary kullanımı)
+öğrenci = {"ad":"Batuhan","yas" :25}   Eşli şekilde sınıflandırmak için kullanılır.
+print(öğrenci["ad"])                   Bir ögenin değerini almak kullanılır. (Batuhan)
+öğrenci["yas"] = 24                    Bir ögeyi değiştirmek için kullanılır.(25'i 24 yaptık)
+öğrenci["bolum"] = "Mühendis"          Bir öge eklemek için kullanılır.
+del öğrenci["ad"]                      Bir öge silmek için kullanılır.
+{key:10} :                             : ' ya kadar olan boşluğu belirtir.(10 boşlık sayısı.)
+print("f{value:.2f}")                  Rakamları gösterir.(printin için f koymak zorundasın.)                 
+-------------------------my_tuple--------------------------(12.Tuple kullanımı)
+print(my_tuple[0])                     Erişme için kullanılır. 1'i yazdırır.([4]'üçüncüyü yazdırır.) 0 başlangıçtır.
+print(my_tuple[1:3])                   Dilimleme için kullanılır 2. ve 3. yü yazdırır. (2,3)
+my_tuple = my_tuple3 + my_tuple2       İki tuple'ı birleştirmek için kullanılır.
+print(len(my_tuple))                   Tuple uzunluğunu bulur. İçindeki tüm ögeleri sayar.
+sorted_tuple = sorted(my_tuple3)       İçindekileri sıralar.
+print(my_tuple3.count(3))              kaç tane 3 olduğunu yazdırır. 3.sırayı değil.
+
+for element in my_tuple                Tuple'ı döngü kullanarak yazdırır.
+    print(elemet)
+
+print("Adı:", oyuncu[0])               Tuple'da bulunan ilk ögeyi çektik ve Adı: ile eşledik.(Adı:Batuhan)
+--------------------------my_set-------------------------------(13.Set kullanımı)
+my_set.add(6)                          Set'in içine 6'yı ekler.
+my_set.remove(5)                       Set'in içinden 5'i siler.
+my_set = set1.union(set2)              İki seti birleştirir.(set1+set2)
+my_set = set1.intersection(set2)       İki seti kesiştirir. Ortak nesneleri alır.
+my_set = set1.difference(set2)         İki seti bölger.Ortak olmayan nesneleri alır.
+lenght = len(my_set)                   Setin uzunluğunu hesaplama. 
+    print(length)
+
+for element in my_set                  Setin elemanlarını for düngüsü kullarak işleme.
+    print(elemet)
+
+my_set.intersection_update(set2)       Setin üzerine gelen set2 ile ortak değerleri alır.(Her güncellemede ortak değeri alır.) 
+set3=my_set.symmetric_difference(set2) İki set üzerindeki ortak olmayan nesneleri alır ve yeni set oluştur.
+my_set.symmetric_difference(set2)      İki set üzerindeki ortak olmayan nesnelerş alır ve ilk setin üzerine oluşturur.
+print(my_set.issubset(set2))           Kümenin kapsayıp kapsamadığını gösterir.(True)(set2, my_set'i kapsıyor), set2'nin alt kümesi my_set
+print(set2.issuperset(my_set))         Kümenin kapsayıp kapsamadığını gösterir.(True)(set2, my_set'i kapsıyor), my_set'in üst kümesi set2
+print(my_set.issuperset(set2))         Kümenin kapsayıp kapsamadığını gösterir.(False)(set2, my_set'i kapsamıyor)
+issubset(alt küme)/issuperset(üst küme)
+f_set = frozenset(my_set)              Setlerin değiştirilmesini engeller. İçindeki elemanlar değiştirilemez. (f_set.add(3) komutu girilirse hata verir. Eklenemez.)
+----------------------Control Komut Listesi--------------------
+ctrl+a                                 Tümünü seç
+ctrl+z                                 Geri al
+ctrl+v                                 Yapıştır
+ctrl+c                                 Kopyala
+ctrl+y                                 Son işlemi yenile
+ctrl+x                                 Seçili nesneyi kes/taşı
+ctrl+w                                 Alt+f4 görevi görür. Açık pencereyi kapatır.
+ctrl+g                                 Konuma git.(7.satır yada 15.satır gibi.)
+ctrl+f                                 Sayfada bul.
+ctrl+e                                 Dosyayı bul.
+------------------------------Git---------------------------------
+git config --global user.name Batu     Git yapılandırma.
+git config --global user.email    
+git config                             Config komutlarını Listeler.
+git config --global                    Global config
+git config --system                    Sistem config
+git config --local                     Local config
+git --list                             Listeler.
+git add .                              Github'a her şeyi aktarır.
+git add 8.Ebob.py                      Ebob dosyasını github'a yükler.
+------------------------Cmd Komutları-----------------------------
+cd C:\Users\....                       Cmd üzerinden dosya değiştirir.
+ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
+dir                                    Cmd üzerinden dosyayı listeler.
