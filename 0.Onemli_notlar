@@ -119,8 +119,10 @@ git --list                             Listeler.
 git add .                              Github'a her şeyi aktarır. Günceller.
 git add 8.Ebob.py                      Ebob dosyasını github'a yükler.
 git commit -m "İlk Comitim             Mesajın kısıltması. İlk Comit ile değişikliği kaydeder.
+
 #Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
-git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
+#git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
+
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
