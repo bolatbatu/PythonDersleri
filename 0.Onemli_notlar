@@ -110,6 +110,7 @@ ctrl+s                                 Kaydet.
 ctrl+shift+s                           Farklı kaydet.
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
+git config -h                          Komut listesini gösterir.
 git config --global user.email    
 git config                             Config komutlarını Listeler.
 git config --global                    Global config
@@ -122,6 +123,7 @@ git commit -m "İlk Comitim             Mesajın kısıltması. İlk Comit ile d
 git branch -M main                     Branch'i main olarak aktarır.
 git remote add origin https://github.. Uzak bilgisayara aktarılmasını sağlarız.
 git push -u origin main                Dosyayı aktarımını sağlıyor.
+git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 
 #Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
 #git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
