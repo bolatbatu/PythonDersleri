@@ -21,6 +21,7 @@ random.randint(a,b)                    a ila b arasında random bir sayı verir.
 and                                    Mantık(ve) komutu.
 or                                     Mantık(veya) komutu.
 docs.python.org                        Pyhton komut kütüphanesi. 
+app.diagrams.net                       Diyagram oluşturmak için kullanılan bir site.
 x.real                                 Gerçel değeri gösterir.
 math.gcd                               En büyük ortak böleni        
 python .\ebob.py                       Cmd üzerinden Ebob uygulamasını python ile açma komutu.
