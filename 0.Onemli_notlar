@@ -123,8 +123,16 @@ git commit -m "degisiklik "            Mesajın kısıltması. İlk Comit ile de
 git branch -M main                     Branch'i main olarak aktarır.
 git remote add origin https://github.. Uzak bilgisayara aktarılmasını sağlarız.
 git push -u origin main                Dosyayı aktarımını sağlıyor. main dosyaya aktarır.
+git push                               Dosya aktarımını sağlayan kısa komut.
+git pull origin main                   Github üzerinde main klasöründe yapılan değişikliği indirmesine/çekmesine yarar.
+git pull                               Github üzerinde yapılan tüm değişikliği çekmesini sağlayan kısa kodu.
 git branch new_branch                  new_branch adında yeni bir branch oluşturur.
 git checkout new_branch                Mevcut bir branch'e geçmek için kullanılan komut.
+git clone gttps://github.com//pytho..  Github üzerinden dosya indirmeyi sağlar. Sadece maini çeker.
+git pull origin new_branch             new_branch dosyasını clone'lar.                   
+git merge origin main                  Dosyayı günceller.
+git remote -v                          Remote edileceği adresi verir.
+git branch -l                          Branchleri listeler.
 git checkput main                      Main'e geçmek için kullanılır.
 git push -u origin new_branch          Mevcut değişikliği new_branch branch'ine aktarır.
 git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
@@ -133,6 +141,8 @@ git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 #git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
 #Daha sonra git push -u origin main yaparak değiştirilen dosyaları github'a aktarım yapılarak sonlandırılacaktır. Tüm değişiklikler github üzerinden gözlemlenebilecektir.
 #Projeler için değişiklikler branch üzerinden yapılmaktadır. 
+#Github üzerinden pull request isteğini gönderildiğinde master'a bildirim gelmektedir. Eğer merge kabul edilirse main' e aktarılmaktadır.
+#yapılan değişiklik pull ile çekilmektedir. Pull'a çekilen değişiklikler main'e aktarılır.
 
 sırasıyla ;
 
