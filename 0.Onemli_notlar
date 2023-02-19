@@ -125,14 +125,18 @@ git remote add origin https://github.. Uzak bilgisayara aktarılmasını sağlar
 git push -u origin main                Dosyayı aktarımını sağlıyor. main dosyaya aktarır.
 git branch new_branch                  new_branch adında yeni bir branch oluşturur.
 git checkout new_branch                Mevcut bir branch'e geçmek için kullanılan komut.
-git push -u original new_branch        Mevcut değişikliği new_branch branch'ine aktarır.
+git checkput main                      Main'e geçmek için kullanılır.
+git push -u origin new_branch          Mevcut değişikliği new_branch branch'ine aktarır.
 git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 
 #Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
 #git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
 #Daha sonra git push -u origin main yaparak değiştirilen dosyaları github'a aktarım yapılarak sonlandırılacaktır. Tüm değişiklikler github üzerinden gözlemlenebilecektir.
 #Projeler için değişiklikler branch üzerinden yapılmaktadır. 
-
+sırasıyla ;
+git add .
+git commit -m  "degisiklik"
+git push -u origin main                Böylece tüm değişikliklerin hepsi github'a aktarılır.
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
