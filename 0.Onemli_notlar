@@ -148,7 +148,9 @@ sırasıyla ;
 
 git add .
 git commit -m  "degisiklik"
-git push -u origin main                Böylece tüm değişikliklerin hepsi github'ta main'e aktarılır.
+git push                               Böylece tüm değişikliklerin hepsi github'ta main'e aktarılır.
+
+git pull                                
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
