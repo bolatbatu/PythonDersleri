@@ -137,3 +137,4 @@ git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
 dir                                    Cmd üzerinden dosyayı listeler.
+clear                                  Terminali temizler.
