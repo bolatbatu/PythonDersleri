@@ -133,10 +133,12 @@ git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 #git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
 #Daha sonra git push -u origin main yaparak değiştirilen dosyaları github'a aktarım yapılarak sonlandırılacaktır. Tüm değişiklikler github üzerinden gözlemlenebilecektir.
 #Projeler için değişiklikler branch üzerinden yapılmaktadır. 
+
 sırasıyla ;
+
 git add .
 git commit -m  "degisiklik"
-git push -u origin main                Böylece tüm değişikliklerin hepsi github'a aktarılır.
+git push -u origin main                Böylece tüm değişikliklerin hepsi github'ta main'e aktarılır.
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
