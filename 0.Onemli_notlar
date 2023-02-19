@@ -119,7 +119,7 @@ git config --local                     Local config
 git --list                             Listeler.
 git add .                              Github'a her şeyi aktarır. Günceller.
 git add 8.Ebob.py                      Ebob dosyasını github'a yükler.
-git commit -m "İlk Comitim             Mesajın kısıltması. İlk Comit ile değişikliği kaydeder.
+git commit -m "İlk Comitim "            Mesajın kısıltması. İlk Comit ile değişikliği kaydeder.
 git branch -M main                     Branch'i main olarak aktarır.
 git remote add origin https://github.. Uzak bilgisayara aktarılmasını sağlarız.
 git push -u origin main                Dosyayı aktarımını sağlıyor.
