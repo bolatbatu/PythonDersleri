@@ -122,7 +122,10 @@ git add 8.Ebob.py                      Ebob dosyasını github'a yükler.
 git commit -m "degisiklik "            Mesajın kısıltması. İlk Comit ile değişikliği kaydeder.
 git branch -M main                     Branch'i main olarak aktarır.
 git remote add origin https://github.. Uzak bilgisayara aktarılmasını sağlarız.
-git push -u origin main                Dosyayı aktarımını sağlıyor.
+git push -u origin main                Dosyayı aktarımını sağlıyor. main dosyaya aktarır.
+git branch new_branch                  new_branch adında yeni bir branch oluşturur.
+git checkout new_branch                Mevcut bir branch'e geçmek için kullanılan komut.
+git push -u original new_branch        Mevcut değişikliği new_branch branch'ine aktarır.
 git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 
 #Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
