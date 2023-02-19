@@ -130,6 +130,8 @@ git config --global --unset-all user.name  Kayıtlı tüm isimleri siler.
 
 #Depoyu açarak hangi dosyanın dosyanın değiştirildiği veya eklendiğini gösterir. (Yeni kod yeşil, değiştirilen kod mavi gösterir.).
 #git add . yapıldıktan sonra git commit -m "degisiklik" yazılıp güncelleme yapılacaktır.
+#Daha sonra git push -u origin main yaparak değiştirilen dosyaları github'a aktarım yapılarak sonlandırılacaktır. Tüm değişiklikler github üzerinden gözlemlenebilecektir.
+#Projeler için değişiklikler branch üzerinden yapılmaktadır. 
 
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
