@@ -13,4 +13,8 @@ for n in ortalama:
    toplam = toplam + int(n)                                                             #sayilarin toplamini hesaplar.
  
 print("GİRDİĞİNİZ SAYİLARİN NOT ORTALAMASI:{0:.2f} ".format(toplam / len(ortalama)))    #len(ortalama) ile kaç adet sayi olduğunu hesaplariz.
-                                                                                        #format(toplam / len(ortalama)) ile sayilarin toplamini sayi adetine bölerek ortalamayi hesaplariz.
+#format(toplam / len(ortalama)) ile sayilarin toplamini sayi adetine bölerek ortalamayi hesaplariz.
+if ortalama != (toplam / len(ortalama)):
+    print("Kaldınız.",sayi)
+if ortalama > (toplam / len(ortalama)):
+    print("Geçtiniz.",sayi)
