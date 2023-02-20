@@ -27,7 +27,7 @@ while True:
                 set1.add(input("Çıkartılacak eleman:")) 
             elif secim3 == 2:
                 set2.remove(input("Çıkartılacak eleman:"))
-            elif secim3 == i3:
+            elif secim3 == 3:
                 break    
     if secim == 3:
         print("Set1:", set1, "||| Set2:",set2)
