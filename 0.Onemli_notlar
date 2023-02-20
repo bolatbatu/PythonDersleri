@@ -18,7 +18,7 @@ complex                                Karmaşık sayıları ifade etmek için k
 pip install                            PyPI kütüphanesinden eklenti indirme.
 range()                                Kaç kez tekrar edileceğini ifade etmek için kullanılır.
 random.randint(a,b)                    a ila b arasında random bir sayı verir.
-random.choice(a)                       a'da mevcut 
+random.choice(a)                       a'da mevcut ifadelerden birini rastgele seçer.(a = "helloworld" sonuç=w gibi. sonuç sürekli değişkendir.)
 and                                    Mantık(ve) komutu.
 or                                     Mantık(veya) komutu.
 docs.python.org                        Pyhton komut kütüphanesi. 

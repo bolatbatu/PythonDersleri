@@ -22,9 +22,9 @@ while True:
         while True:
             print("Seti Seçiniz.(set1=1/set2=2/iptal=3)")
             print("Set1:", set1, "||| Set2:",set2)
-            secim3 = input("Seçim: ")
+            secim3 = int(input("Seçim: "))
             if secim3 == 1:
-                set1.add(input("Çıkartılacak eleman:")) 
+                set1.remove(input("Çıkartılacak eleman:")) 
             elif secim3 == 2:
                 set2.remove(input("Çıkartılacak eleman:"))
             elif secim3 == 3:
