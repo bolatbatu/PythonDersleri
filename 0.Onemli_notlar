@@ -97,19 +97,39 @@ print(set2.issuperset(my_set))         Kümenin kapsayıp kapsamadığını gös
 print(my_set.issuperset(set2))         Kümenin kapsayıp kapsamadığını gösterir.(False)(set2, my_set'i kapsamıyor)
 issubset(alt küme)/issuperset(üst küme)
 f_set = frozenset(my_set)              Setlerin değiştirilmesini engeller. İçindeki elemanlar değiştirilemez. (f_set.add(3) komutu girilirse hata verir. Eklenemez.)
-----------------------Control Komut Listesi--------------------
-ctrl+a                                 Tümünü seç
-ctrl+z                                 Geri al
-ctrl+v                                 Yapıştır
-ctrl+c                                 Kopyala
-ctrl+y                                 Son işlemi yenile
-ctrl+x                                 Seçili nesneyi kes/taşı
-ctrl+w                                 Alt+f4 görevi görür. Açık pencereyi kapatır.
-ctrl+g                                 Konuma git.(7.satır yada 15.satır gibi.)
-ctrl+f                                 Sayfada bul.
-ctrl+e                                 Dosyayı bul.
-ctrl+s                                 Kaydet.
-ctrl+shift+s                           Farklı kaydet.
+------------------------------Koşul-------------------------------(14.Kosullu_ifadeler)
+if/elif/else                           Koşul ifadeleri için kullanılır.(Else hiçbir koşul sağlanmıyorsa çalışır.)
+sonuc = "Doğru" if koşul else "Yanlış" (Ternary)Koşullu ifadeleri tek satırda kullanmak için kullanılan komut.
+
+if koşul :                             İç içe if koşulu kullanılabilir.
+    if koşul2:                         İlk koşul sağlanırsa içindeki koşul'a bakılır.
+
+if koşul :                             İf koşulundan sonra : ifadesi kullanılır.   
+------------------------------For---------------------------------(15.For)
+for i in range(2,8):                   2'den'8 e kadar olan sayılar.
+for i in range(0,10,2):                0'dan 10'a kadar olan sayıları 2şer atlayarak sayar.
+for i in range(start,stop,step):       Başlangıç,bitiş ve adım sayılarının yazılacağı komut. Stop kısmı dahil edilmez.
+for i in range():                      Dongu ifdaelerinden sonra : ifadesi kullanılır.
+
+for i, a in enumerate(List,start=3):   List elemanlarının başına sayı ekler ve listenin ilk elemanın sayısı 3'ten başlar.
+    print(i,a)
+
+for i in zip(List,List2):              2 List elemanlarını birleştirmeye yarar.
+    print(i)
+
+sozluk = dict(zip(isimler,yaslar))     Listeleri dict komutu ile Dictionary olarak birleştirir.
+print(sozluk)
+
+for i range(0,10)
+    if sayi==5:
+        break                          Döngüyü 5'te durdurur ve 5 dahil edilmez.
+for i range(0,10)
+    if sayi ==5:
+        continue                       Döngüyü 5'te durdurur ve 5 dahil edilmez, devam eder.
+------------------------------While-------------------------------(16.While)
+while koşul :                          Koşul sağlandığı sürece işlem devam edecektir.
+i +=1                                  i sayısına her döngü sonrası 1 ekler.
+
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
 git config -h                          Komut listesini gösterir.
@@ -152,7 +172,20 @@ git add .
 git commit -m  "degisiklik"
 git push                               Böylece tüm değişikliklerin hepsi github'ta main'e aktarılır.
 
-git pull                                
+git pull           
+----------------------Control Komut Listesi----------------------
+ctrl+a                                 Tümünü seç
+ctrl+z                                 Geri al
+ctrl+v                                 Yapıştır
+ctrl+c                                 Kopyala
+ctrl+y                                 Son işlemi yenile
+ctrl+x                                 Seçili nesneyi kes/taşı
+ctrl+w                                 Alt+f4 görevi görür. Açık pencereyi kapatır.
+ctrl+g                                 Konuma git.(7.satır yada 15.satır gibi.)
+ctrl+f                                 Sayfada bul.
+ctrl+e                                 Dosyayı bul.
+ctrl+s                                 Kaydet.
+ctrl+shift+s                           Farklı kaydet.                     
 ------------------------Cmd Komutları-----------------------------
 cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açılacak dosyayı seçer.
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)

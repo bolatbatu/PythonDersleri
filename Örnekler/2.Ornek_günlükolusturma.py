@@ -3,6 +3,7 @@
 #2*günün tarihini girilecek.                                                        yapıldı.
 #3*günlük içindeki notlar kaydedilecek ve tarihe göre görüntülenebilecek.           yapılamadı.
 #4*günlük şifre ile girilebilecek.                                                  yapıldı.
+#5*Günlük uygulamasi için logging kütüphanesi kullanılabilir.
 
 günlük = []
 

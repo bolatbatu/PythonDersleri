@@ -23,19 +23,19 @@ print("4*Bölme(*)")
 
 while True:
     islem = input()
-    if islem == "+" :                                                        # "+"toplama
+    if islem == "+" :                                                          # "+"toplama
         sonuc = sayi_1 + sayi_2
         print("{} + {} = {} ".format(sayi_1,sayi_2,sonuc))            
-    if islem == "-" :                                                        # "-"çıkartma
+    elif islem == "-" :                                                        # "-"çıkartma
         sonuc = sayi_1 - sayi_2
         print("{} - {} = {} ".format(sayi_1,sayi_2,sonuc)) 
-    if islem == "/" :                                                        # "/"bölme
+    elif islem == "/" :                                                        # "/"bölme
         sonuc = sayi_1 / sayi_2
         print("{} / {} = {} ".format(sayi_1,sayi_2,sonuc)) 
-    if islem == "*" :                                                        # "*"çarpma
+    elif islem == "*" :                                                        # "*"çarpma
         sonuc = sayi_1 * sayi_2
-        print("{} * {} = {} ".format(sayi_1,sayi_2,sonuc))                   #.format yapısı ile daha temiz bir görünüm sağlamaktayız.
-    if islem == "end":
+        print("{} * {} = {} ".format(sayi_1,sayi_2,sonuc))                     #.format yapısı ile daha temiz bir görünüm sağlamaktayız.
+    elif islem == "end":
         print("Hesap makinesinden çıkış yapıldı.")
         break
     
