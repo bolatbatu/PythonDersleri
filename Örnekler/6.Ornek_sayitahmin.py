@@ -1,4 +1,4 @@
-#Bilgisayarın belirlemiş olduğu sayiyi bulma. Deneme hakkiniz 10.
+#10 deneme hakkı ile bilgisayarın belirlemiş olduğu sayiyi bulma.
 
 import random
 i = 0                   
