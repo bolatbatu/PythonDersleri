@@ -6,6 +6,12 @@ Set                                    Küme oluşturulmasına yarar. Sıralanam
 Ctrl+C                                 Komutu while döngüsünü sonlandırır.
 While(True)                            Komutu sonsuz döngüye sokar.
 If/Elif/Else                           Koşul komutu.
+**                                     Karesini alma.
+//                                     Kesirsiz bölme.(50/9=5)
+/                                      Kesitli bölme.(50/9=5.55)
++                                      Toplama.
+-                                      Çıkartma.
+*                                      Çarpma.
 4boşluk/1tab                           Komut dizinini içine aktarma.
 break                                  While(True) döngüsünü sonlandırma.
 input("Değer giriniz.")                İçerisine argüman yazmak için kullanılır.
@@ -128,7 +134,29 @@ for i range(0,10)
         continue                       Döngüyü 5'te durdurur ve 5 dahil edilmez, devam eder.
 ------------------------------While-------------------------------(16.While)
 while koşul :                          Koşul sağlandığı sürece işlem devam edecektir.
+while True:                            Koşul sonsuz döngüde devam eder.
+while koşul :                          While koşullu ifadelerde : kullanılır.
 i +=1                                  i sayısına her döngü sonrası 1 ekler.
+------------------------------Fonksiyon---------------------------(17.Fonksiyon)
+def ......                             def komutu kullanarak fonksiyon oluşturulur.
+
+def fonksiyon_adi(parametreler):       Fonksiyon işlemleri. Fonksiyona dışarıdan erişilemez.
+    return deger
+
+def fonksiyon_adi(parametreler):       Fonksiyonlarda : kullanılır.
+
+def input(x,y):                        İnput şeklinde kullanılabilir. 
+
+def fonksiyon_adi():                   İç içe fonksiyon oluşturulabilir. Fonksiyon içerisindeki değerler fonksiyona özeldir.
+    print()
+    def fonksiyon_adi2():
+        print()
+    fonksiyon_adi2()
+
+global degisken                        Fonksiyon dışı ve içinde tanımlama için kullanılan değişken.
+yerel degisken                         Fonksiyon içinde tanımlamak için kullanılam değişken.
+
+
 
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
