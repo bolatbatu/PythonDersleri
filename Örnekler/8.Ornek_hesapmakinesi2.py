@@ -12,18 +12,20 @@ def çarpma(sayi1,sayi2):                                                #Çarpm
     sonuc=sayi1*sayi2
     print("\n{} * {} = {} ".format(sayi1,sayi2,sonuc))
     return sonuc
-def bölme(sayi1,sayi2):                                                 #Bölme fonksiyonu.
-    sonuc=sayi1/sayi2
-    print("\n{} / {} = {} ".format(sayi1,sayi2,sonuc))
-    return sonuc
+def bölme (sayi1,sayi2):
+    try:
+        sonuc = sayi1 /sayi2
+        return sonuc                                                  #Bölme fonksiyonu.
+    except ZeroDivisionError:
+        print("\n Sifira bölmek mümkün değil")
 
 while True:
 
     #İşlemi seçiniz.
     print("\n1*Toplama(+)")
-    print("2*Çıkartma(-)")
-    print("3*Çarpma(/)")
-    print("4*Bölme(*)")
+    print("2*Çikartma(-)")
+    print("3*Çarpma(*)")
+    print("4*Bölme(/)")
 
     secim = input("\nYapmak istediğiniz islemi seciniz.(çikis için 'end' yaziniz.):")
 

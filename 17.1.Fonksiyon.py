@@ -14,3 +14,7 @@ def kare(sayi):                            #Karesini alma.
     sonuc = sayi**2
     return sonuc
 print(kare(3))                             #Fonksiyonu çağırma.
+
+def kare(sayi):                            #Yukarıdaki fonksiyon kısa şekilde yazılabilir.
+    return sayi**2
+print(kare(4))

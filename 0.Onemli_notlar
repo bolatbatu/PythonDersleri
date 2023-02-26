@@ -156,6 +156,12 @@ def fonksiyon_adi():                   İç içe fonksiyon oluşturulabilir. Fon
 global degisken                        Fonksiyon dışı ve içinde tanımlama için kullanılan değişken.
 yerel degisken                         Fonksiyon içinde tanımlamak için kullanılam değişken.
 
+def bölme (x,y):                       
+    try:                               Fonksiyonun hata vererek kapatılmasını engelleme komutu.
+        sonuc = x/y
+        return sonuc                                                  
+    except ZeroDivisionError:          Fonksiyonun vereceği hatada vereceği ifade.
+        print("\n Sifira bölünemez")   5/0 yapıldığında terminalde Sifira bölünemez yazar ve kod kapanmadan devam eder.
 
 
 ------------------------------Git---------------------------------
