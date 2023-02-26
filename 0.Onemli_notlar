@@ -177,7 +177,7 @@ git pull
 ctrl+a                                 Tümünü seç
 ctrl+z                                 Geri al
 ctrl+v                                 Yapıştır
-ctrl+c                                 Kopyala
+ctrl+c                                 Kopyala / Terminalde görevi sonlandırma.
 ctrl+y                                 Son işlemi yenile
 ctrl+x                                 Seçili nesneyi kes/taşı
 ctrl+w                                 Alt+f4 görevi görür. Açık pencereyi kapatır.
