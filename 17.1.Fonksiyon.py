@@ -8,6 +8,7 @@ print(toplama(9,9))
 #    x=input()                             #Fonksiyona dışarıdan erişilemez.
 #    y=input()
 #    sonuc=x+y
+#    return sonuc
 
 def kare(sayi):                            #Karesini alma.
     sonuc = sayi**2

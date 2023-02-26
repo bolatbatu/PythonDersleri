@@ -1,18 +1,18 @@
 #Fonksiyon kullanılarak hesap makinesi oluşturma.
 
-def toplama():                                               #Toplama fonksiyonu.
+def toplama(sayi1,sayi2):                                               #Toplama fonksiyonu.
     sonuc=sayi1+sayi2
     print("\n{} + {} = {} ".format(sayi1,sayi2,sonuc))
     return sonuc
-def cikartma():                                              #Çıkartma fonkisyonu.
+def cikartma(sayi1,sayi2):                                              #Çıkartma fonkisyonu.
     sonuc=sayi1-sayi2
     print("\n{} - {} = {} ".format(sayi1,sayi2,sonuc))
     return sonuc
-def çarpma():                                                #Çarpma fonksiyonu.
+def çarpma(sayi1,sayi2):                                                #Çarpma fonksiyonu.
     sonuc=sayi1*sayi2
     print("\n{} * {} = {} ".format(sayi1,sayi2,sonuc))
     return sonuc
-def bölme():                                                 #Bölme fonksiyonu.
+def bölme(sayi1,sayi2):                                                 #Bölme fonksiyonu.
     sonuc=sayi1/sayi2
     print("\n{} / {} = {} ".format(sayi1,sayi2,sonuc))
     return sonuc
@@ -32,13 +32,13 @@ while True:
     sayi2=int(input("İkinci Sayiyi giriniz:"))
 
     if secim == "+":
-        toplama()
+        toplama(sayi1,sayi2)
     elif secim == "-":
-        cikartma()
+        cikartma(sayi1,sayi2)
     elif secim == "*":
-        çarpma()
+        çarpma(sayi1,sayi2)
     elif secim == "/":
-        bölme()
+        bölme(sayi1,sayi2)
     elif secim =="end":
         print("Hesap makinesinden cikis yapildi.")
         break
