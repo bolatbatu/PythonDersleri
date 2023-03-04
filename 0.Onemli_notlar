@@ -161,6 +161,17 @@ def böl(x,y):
         return x/y                                                  
     except:                            Fonksiyonun vereceği herhangi bir hatada çökmeyecek ve alttaki ifadeyi terminale yansıtacak.
         print("\n Hata var")           5/0 yapıldığında terminalde Hata var yazar ve kod kapanmadan devam eder.
+------------------------------Modüller---------------------------(18.Modüller)
+Modül ile kütüphane farkı; Modüller daha çok tek bir işi gerçekleştirmeye yararken, kütüphane ise birden fazla modül barındıran bir sistemdir.
+"os" modülü(İşletim sistemi modülü)    İşletim sistemi ile ilgili işlemler yapar. İşletim bilgilerine erişim sağlar. Her sistemde çalışır.
+"os"                                   Dizin işlemleri,dosya işlemleri gibi okuma/yazma/silme/listeleme/dizin silme gibi işlemler gerçekleştirir.
+"os"                                   İşletim sistemi adı/kullanıcı adı gibi işlemlere erişim sağlar.
+
+import os
+os.mkdir("yeni_dizin")                 Yeni bir dizin oluşturma
+print(os.listdir("."))                 Dizin içeriğini listeleme 
+os.rename("yeni_dizin","yeni_dizi_adı")Dizin adı değiştirme
+os.rmdir("yeni_dizin_adı")             Dizin silme
 
 
 ------------------------------Git---------------------------------
