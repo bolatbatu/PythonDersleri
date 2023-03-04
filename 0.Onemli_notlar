@@ -168,16 +168,27 @@ Modül ile kütüphane farkı; Modüller daha çok tek bir işi gerçekleştirme
 "os"                                   İşletim sistemi adı/kullanıcı adı gibi işlemlere erişim sağlar.
 
 import os
-os.mkdir("yeni_dizin")                 Yeni bir dizin oluşturma
+os.mkdir("yenidizin")                  Yeni bir dizin oluşturma
 print(os.listdir("."))                 Dizin içeriğini listeleme 
-os.rename("yeni_dizin","yeni_dizi_adı")Dizin adı değiştirme
-os.rmdir("yeni_dizin_adı")             Dizin silme
+os.rename("yenidizin","yenidizinadı")  Dizin adı değiştirme
+os.rmdir("yenidizinadı")               Dizin silme
+
+
+f= open("dosya_adı","modu")            Dosya okuma ve yazma işlemleri için kullanılan fonksiyon.
+print(f.read())                        Dosyayı listeler.
+
+open("dosya_adı","r")                  Dosyayı okumak mümkündür,yazı yazılamaz.
+open("dosya_adı","w")                  Dosyayı okumak ve yazı yazmak mümkündür. Dosya yoksa oluşturur, varsa üzerine yazar.
+open("dosya_adı","x")                  Belirtilen dosyayı oluşturur, dosya varsa bir hata döndürür.
+open("dosya_adı","a")                  Eklemek için dosya açar, yoksa oluşturur. Dosya varsa sonuna ekler.
+open("dosya_adı","t")                  Default value, yazı modu.
+open("dosya_adı","b")                  Binary mode(örnek olarak resimler.)
 
 
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
 git config -h                          Komut listesini gösterir.
-git config --global user.email    
+git config --global user.email          
 git config                             Config komutlarını Listeler.
 git config --global                    Global config
 git config --system                    Sistem config
