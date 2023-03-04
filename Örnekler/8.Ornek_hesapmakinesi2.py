@@ -15,7 +15,7 @@ def çarpma(sayi1,sayi2):                                                #Çarpm
 def bölme (sayi1,sayi2):
     try:
         sonuc = sayi1 /sayi2
-        return sonuc                                                  #Bölme fonksiyonu.
+        return sonuc                                                    #Bölme fonksiyonu.
     except ZeroDivisionError:
         print("\n Sifira bölmek mümkün değil")
 
