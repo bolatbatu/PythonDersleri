@@ -173,9 +173,11 @@ print(os.listdir("."))                 Dizin içeriğini listeleme
 os.rename("yenidizin","yenidizinadı")  Dizin adı değiştirme
 os.rmdir("yenidizinadı")               Dizin silme
 
+----open()----
 
 f= open("dosya_adı","modu")            Dosya okuma ve yazma işlemleri için kullanılan fonksiyon.
 print(f.read())                        Dosyayı listeler.
+
 
 open("dosya_adı","r")                  Dosyayı okumak mümkündür,yazı yazılamaz.
 open("dosya_adı","w")                  Dosyayı okumak ve yazı yazmak mümkündür. Dosya yoksa oluşturur, varsa üzerine yazar.
@@ -183,6 +185,30 @@ open("dosya_adı","x")                  Belirtilen dosyayı oluşturur, dosya va
 open("dosya_adı","a")                  Eklemek için dosya açar, yoksa oluşturur. Dosya varsa sonuna ekler.
 open("dosya_adı","t")                  Default value, yazı modu.
 open("dosya_adı","b")                  Binary mode(örnek olarak resimler.)
+
+----with open()---
+
+with open("dosya_adı","r") as f:       Dosyayı with ile okume işlemi.
+    print(f.read())
+
+with open("dosya_adı","w") as f:       Dosyayı with ile yazma işlemi.
+    print(f.write())
+
+os.remove("dosya_adı.txt")             Dosya silme.
+os.rename("dosya_adı.txt","yeni_dosya_adı.txt")Dosya adı değiştirme.
+
+----işletim sistemine erişme----
+posix(Lunix işletim sistemi)
+nt(Microsoft işletim sistemi)
+
+print(os.name)                         İşletim sistemi adı öğrenme.(nt)
+print(os.getlogin())                   Kullanıcı adını bulma.(batu_)
+print(os.path.expanduser("~"))         Ana dizi yolunu bulur.(C:\Users\batu_)
+
+Terminalde sırasıyla;
+python
+import os
+print(os.name)
 
 
 ------------------------------Git---------------------------------
