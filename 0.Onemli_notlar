@@ -217,6 +217,97 @@ python
 import os
 print(os.name)
 
+----math()----
+
+import math
+
+math.sqrt()                            Karekökünü hesaplar
+math.pow()                             Üssünü alma
+math.ceil()                            Sayıyı üst kısma yuvarlar(33.03=34)
+math.lgamma()                          Bu fonksiyon daha önce öğrendiğimiz iki fonksiyonu birleştiriyor.
+math.atanh()                           Verilen hiperbolik tanjant değerinin tersini döndürür.
+math.copysign()                        Aldığı iki parametreden ikincisinin işaretini birincisine verir.
+math.fabs()                            Verilen değerin mutlak değerini alır.
+math.factorial()                       Verilen sayının faktoriyelini döndürüyor. Eğer verilen değer pozitif tam sayı değilse ValueError hatası veriyor.
+math.floor()                           ceil fonksiyonunun tam tersi bir işleve sahip. Verilen ondalıklı sayıyının bir altındaki tam sayıyı döndürür.
+math.fmod()                            Verdiğiniz birinci parametrenin ikinci parametreye bölümünden kalanı buluyor. % operatöründen farkı negatif sayılarda ortaya çıkıyor.
+math.frexp()                           Bu fonksiyon x bilindiğinde aşağıdaki denklemin m ve e parametrelerini bulmaya yarıyor. m değerinin mutlak değeri 0,5 ve 1 arasında bir değer alıyor.
+math.gcd()                             Verilen iki sayının EBOB’unu veriyor.
+math.trunc()                           int fonksiyonu ile aynı işi yapıyor.
+math.e                                 euler sabitini tutan bir değişken. Değeri: 2.718281…
+math.pi                                pi sayısını tutan değişken. Değeri: 3.141592….
+math.tau                               tau sabitini tutan değişken. Değeri pi sayısının iki katı.
+math.exp()                             euler sabitinin kuvvetini alır. Yani yaptığı iş şudur:math.e ** x
+math.expm1()                           math.exp fonksiyonunun yaptığı işten tek farkı sonuçtan 1 çıkarmasıdır
+math.log()                             Birinci değerin ikinci değere göre logaritmasını hesaplar.
+math.log1p()                           Verilen sayının bir fazlasının e tabanına göre logaritmasını hesaplar.
+math.log2()                            Verilen sayının 2 tabanında logaritmasını hesaplar.
+math.log10()                           Verilen sayının 10 tabanında logaritmasını hesaplar.
+math.degrees()                         Verilen sayıyı radyandan dereceye çevirir.
+math.radians()                         Verilen sayıyı dereceden radyana çevirir.
+math.sin()                             Radyan cinsinden verilen sayının sinüsünü hesaplar.
+math.cos()                             Radyan cinsinden verilen sayının cosünüsünü hesaplar.
+math.tan()                             Radyan cinsinden verilen sayının tanjantını hesaplar.
+math.cot()                             Radyan cinsinden verilen sayının cotanjatını hesaplar.
+math.asin()                            Verilen sinüs değerinden radyan cinsinde bir açı döndürür.
+math.acos()                            Verilen kosinüs değerinden radyan cinsinde bir açı döndürür.
+math.atan()                            Verilen tanjant değerinden radyan cinsinde bir açı döndürür.
+math.atan2()                           İlk değere y ikinci değere x dersek şu işlemin sonucunu döndürür: atan(y/x)
+math.hypot()                           İlk değere x ikinci değere y dersek şu işlemin sonucunu döndürür: sqrt(x*x+y*y).
+math.cosh()                            Verilen değerin hiperbolik kosinüsünü döndürür.
+math.sinh()                            Verilen değerin hiperbolik sinüsünü döndürür.
+math.tanh()                            Verilen değerin hiperbolik tanjantını döndürür.
+math.acosh()                           Verilen hiperbolik kosinüs değerinin tersini döndürür.
+math.asinh()                           Verilen hiperbolik sinüs değerinin tersini döndürür.
+math.atanh()                           Verilen hiperbolik tanjant değerinin tersini döndürür.
+math.gamma()                           Bu fonksiyon factorial fonksiyonuna çok benziyor. Farklarından biri verilen sayının bir azının faktoriyelini hesaplamasıdır. Ancak asıl fark sayı büyüdüğünde ortaya çıkıyor.
+math.lgamma()                          Bu fonksiyon daha önce öğrendiğimiz iki fonksiyonu birleştiriyor.
+
+----datetime----
+
+import datetime
+
+datetime.date.now()                    Şuanki tarih.
+datetime.date()                        Belirtilen tarih.
+datetime.time()                        Belirtilen zaman.
+datetime.datetime()                    Belirtilen tarih ve zaman.
+datetime.today()                       Bu fonksiyon now() ile aynı içeriğe ve işleve sahiptir
+
+bugün = datetime.datetime.today()
+
+bugün.year
+bugün.month
+bugün.day
+bugün.hour
+bugün.minute
+bugün.second
+bugün.microsecond
+
+an = datetime.datetime.now()
+datetime.datetime.ctime(an)             Fonksiyonu, içinde bulunduğumuz ana ilişkin tarih ve zaman bilgilerini içeren okunaklı bir karakter dizisi verir.
+
+datetime.datetime.strftime(an "%y")
+%a                                      hafta gününün kısaltılmış adı
+%A                                      hafta gününün tam adı
+%b                                      ayın kısaltılmış adı
+%B                                      ayın tam adı
+%c                                      tam tarih, saat ve zaman bilgisi
+%d                                      sayı değerli bir karakter dizisi olarak gün
+%j                                      belli bir tarihin, yılın kaçıncı gününe denk geldiğini gösteren 1-366 arası bir sayı
+%m                                      sayı değerli bir karakter dizisi olarak ay
+%U                                      belli bir tarihin yılın kaçıncı haftasına geldiğini gösteren 0-53 arası bir sayı
+%y                                      yılın son iki rakamı
+%Y                                      yılın dört haneli tam hali
+%x                                      tam tarih bilgisi
+%X                                      tam saat bilgisi
+%H                                      saat
+%M                                      dakika
+%S                                      Saniye
+
+import locale                           Zaman dilini bulunduğun yer egöre ayarlar.
+locale.setlocale(locale.LC_ALL, '')     Zaman dilimini Türkçe ayarlar.
+locale.setlocale(locale.LC_ALL,'italian')Zaman dilimini italyanca ayarlar.
+
 
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
