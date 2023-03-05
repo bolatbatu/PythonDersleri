@@ -1,4 +1,4 @@
-#Bilgisayarin senin belirlemiş sayini bulma.
+#Bilgisayarin random şekilde belirlenmiş sayini bulma.
 import random 
 
 def pick_number():

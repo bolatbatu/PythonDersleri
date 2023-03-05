@@ -173,6 +173,13 @@ print(os.listdir("."))                 Dizin içeriğini listeleme
 os.rename("yenidizin","yenidizinadı")  Dizin adı değiştirme
 os.rmdir("yenidizinadı")               Dizin silme
 
+try:                                   Dosya oluştururken hata almamak için kullanılan komut.
+    os.mkdir("veriler")               
+except FileExistsError:                Hata kaynaklanınca kapanmasını engellemek için kullanıldı.
+    print("Halen varolan bir dosya oluşturulamaz:")
+
+os.mkdir(os.path.expanduser("~")+"/t") Bilgisayarın dizin komutunda t adlı dosya oluşturur.(C:\Users\Public\t)
+
 ----open()----
 
 f= open("dosya_adı","modu")            Dosya okuma ve yazma işlemleri için kullanılan fonksiyon.
