@@ -28,5 +28,5 @@ while True:
     seconds = ((ends-start).seconds)%60
     hours = last.seconds//3600
     minute = last.seconds%3600//60
-    print(month, "Ay",day,"Gün",hours,":",minute,":",seconds)
+    print(month, "Ay",day,"Gün",hours,"Saat",minute,"Dakika",seconds,"Saniye")
     time.sleep(1)
