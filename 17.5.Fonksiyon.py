@@ -14,5 +14,4 @@ def Fibonacci(n):
         return 1
     else:
         return Fibonacci(n-1)+Fibonacci(n-2)
-
 print(Fibonacci(7)) # 0 1 1 2 3 5 8 13
