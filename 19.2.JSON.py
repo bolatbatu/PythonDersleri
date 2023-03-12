@@ -13,5 +13,5 @@ data={
     }
 }
 
-with open("19.4.data.json","w") as f:
+with open("19.4.data.json","w") as f:                    #Dosya yoksa oluşturur, varsa üzerine yazar.
     json.dump(data, f)                                   #Data yazmak için kullanılan komut.

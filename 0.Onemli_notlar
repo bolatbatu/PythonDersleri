@@ -305,14 +305,15 @@ datetime.datetime.strftime(an "%y")
 %H                                     saat
 %M                                     dakika
 %S                                     Saniye
-
+----locale----
 import locale                          Zaman dilini bulunduğun yer egöre ayarlar.
 locale.setlocale(locale.LC_ALL, '')    Zaman dilimini Türkçe ayarlar.
 locale.setlocale(locale.LC_ALL,'italian')Zaman dilimini italyanca ayarlar.
 
-----csv----
-import csv
 ------------------------------JSON--------------------------------(19.JSON)
+
+import json
+
 json veri depolamak,taşımak veya paylaşmak için kullanılan veri biçimidir.İnsanlar ve makineler tarafından kolayca okunur.
 json, anahtar-değer çiftleri kullanarak verileri organize eder.
 json herhangi bir programlama dilinde kullanılabilir. json verileri, metin dosyalarında depolanabilir ve web uygulamalarında, API'lerde ve veritabanlarında kullanılabilir.
@@ -321,6 +322,17 @@ json modülü, JSON verilerini Python sözcüklerine veya nesnelerine dönüşt�
 
 json.load()                            JSON biçimimdeki bir dosyayı okuyup, Python nesnelerine dönüştürür.
 json.dump()                            Python nesnelerini JSON biçimindeki bir dosyaya yazar.
+------------------------------CSV---------------------------------(20.CSV)
+
+import csv
+
+csv modülü, Python'da CSV(comma-separated values) formatındaki dosyalarla çalıştırmak için kullanılan bir standart kütüphanedir.
+CSV, verileri virgülle ayrılmış bir şekilde tutan ve ssütunları birbirinden ayıran bir dosya formatıdır.
+
+csv.reader():                          CSV dosyasını okumak için kullanılır. Bu işlev, CSV dosyasını okur ve her bir satırı bir liste olarak döndürür.
+csv.writer():                          CSV dosyasına yazmak için kullanılırç Bu işlev, verilen liste ve tuple'ları CSV dosyasına yazar.
+csv.DictReader():                      CSV dosyasını okumak için kullanılır. Bu işlev, her bir satırı bir sözlük olarak döndürür ve sütun adlarını anahtar olarak kullanır.
+csv.DictWriter():                      CSV dosyasını yazmak için kullanılır. Bu işlev, verilen sözlükleri CSV dosyasına yazar ve sütun adlarını anahtar olarak kullanır.
 
 
 
