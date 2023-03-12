@@ -172,6 +172,7 @@ os.mkdir("yenidizin")                  Yeni bir dizin oluşturma
 print(os.listdir("."))                 Dizin içeriğini listeleme 
 os.rename("yenidizin","yenidizinadı")  Dizin adı değiştirme
 os.rmdir("yenidizinadı")               Dizin silme
+os.listdir("yenidizin")                Dizin listeler.
 
 try:                                   Dosya oluştururken hata almamak için kullanılan komut.
     os.mkdir("veriler")               
