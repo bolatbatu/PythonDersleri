@@ -312,6 +312,16 @@ locale.setlocale(locale.LC_ALL,'italian')Zaman dilimini italyanca ayarlar.
 
 ----csv----
 import csv
+------------------------------JSON--------------------------------(19.JSON)
+json veri depolamak,taşımak veya paylaşmak için kullanılan veri biçimidir.İnsanlar ve makineler tarafından kolayca okunur.
+json, anahtar-değer çiftleri kullanarak verileri organize eder.
+json herhangi bir programlama dilinde kullanılabilir. json verileri, metin dosyalarında depolanabilir ve web uygulamalarında, API'lerde ve veritabanlarında kullanılabilir.
+json modülü, python'da JSON(JavaScript Object Notatiom) veri biçimini işlemek için kullanılan standart bir kütüphanedir. Verileri okunaklı ve taşınabilir bir biçimde depolar.
+json modülü, JSON verilerini Python sözcüklerine veya nesnelerine dönüştürmek ve aynı şekilde Python nesnelerii JSON verilerine dönüştürmek için kullanılır.
+
+json.load()                            JSON biçimimdeki bir dosyayı okuyup, Python nesnelerine dönüştürür.
+json.dump()                            Python nesnelerini JSON biçimindeki bir dosyaya yazar.
+
 
 
 ------------------------------Git---------------------------------
