@@ -1,0 +1,1 @@
+data = ["ad","batuhan","s"]
