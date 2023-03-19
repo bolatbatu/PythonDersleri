@@ -1,4 +1,4 @@
-filename = input("Dosya adını giriniz:")                        #İstenilen dosyanın adını giriniz.
+filename = input("Dosya adını giriniz:")                        #İstenilen dosyanın adını giriniz.(Örnekler\Test.txt)
 with open(filename,"r") as file:                                #Girilen dosya bu komut sayesinde açılacaktır.
     text = file.read().lower()
 words=text.split()                                              #.split() ile girilen harflerin hepsi küçük olacak. Böylece büyük harf başlayan kelimeler yeni kelime sayılmayacak.
