@@ -333,8 +333,44 @@ csv.reader():                          CSV dosyasını okumak için kullanılır
 csv.writer():                          CSV dosyasına yazmak için kullanılırç Bu işlev, verilen liste ve tuple'ları CSV dosyasına yazar.
 csv.DictReader():                      CSV dosyasını okumak için kullanılır. Bu işlev, her bir satırı bir sözlük olarak döndürür ve sütun adlarını anahtar olarak kullanır.
 csv.DictWriter():                      CSV dosyasını yazmak için kullanılır. Bu işlev, verilen sözlükleri CSV dosyasına yazar ve sütun adlarını anahtar olarak kullanır.
+------------------------------Class---------------------------------(22.Class)
+Abstraction(Soyutlama)                 Tek Class içindeki __init__ soyutlar ve erişim engeller. Class abc:
+Inheritance(Miras alma)                Başka bir class içinde başka class'ı kullanma.   Class abd(dbe):
+Polymorphism(Çok biçimlilik)           Daha fazla class'ın farklı özelliklere sahip olması.
+Encapsulation(Kapsülleme)              __ kullanılır ve kapsülleme ile erişim tamamen engellenir. Erişim açılması için fonksiyon kullanılır.
+
+class abc:                             Sınıf ismini oluşturmaya yarar.
+    def __init__(self, a,b,c):         Dışarıdan erişilemez.
+        self.a = a                     a'yı tanıtmaya yarar.
+        self.b = b                     b'yi tanıtmaya yarar.
+        self.c = c                     c'yi tanıtmaya yarar.
+abc1 = ("a","b","c")                   class içinde değiştirilemez bilgilere isim verir.
+
+self.x = []                            Eğer liste dışarıda olursa a'ya eklenen tüm bilgiler b ve c'ye de eklenecektir.
+class abc :
+    def add_x(self,x):
+        self.x.append(x)
+
+class abc:
+    name = "ifade"                      Eğer name sabit ise class'ın altına yazılır ve tüm ifadelede sabit kullanılır.
+
+class abc:
+self.x = []                            Eğer liste içeride olursa a'ya eklenen tüm bilgiler b ve c'ye dahil edilmeyecektir.
+    def add_x(self,x):
+        self.x.append(x)
 
 
+class dfe(abc):                        class abd'De verilen bilgilere erişim sağlar bir nevi miras alır.
+    def __init__(self, d,f,e):
+        super().__init__(a,b,c)        Bir üst sınıfın nitelik ve metotları üzerinde değişiklik yaparken, mevcut özellikleri de muhafaza edebilmemizi sağlar.
+        self.g = g                     
+
+super()                                Üst sınıfa erişim sağlar.
+
+self.__ad _ ad                         Erişimi kısıtlar. Erişim için fonksiyon oluşturulması gerekir.
+
+def ad_erisim(self):                   Dışarıdan erişilmesi için gerekli olan komut dizimidir.
+    return self.__exam1
 
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
