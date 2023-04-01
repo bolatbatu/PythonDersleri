@@ -4,7 +4,7 @@ class Arac:
         self.model = model
         self.renk = renk
         self.plaka = plaka
-
+        
     def __str__(self):
         return f"{self.marka} {self.model} ({self.renk}) - {self.plaka}"
 
@@ -22,8 +22,8 @@ class ParkYeri:
         arac = self.arac
         self.arac = None
         return arac
-
     def __str__(self):
+        
         return "Dolu" if self.doluluk else "Boş"
 
 class Otopark:
