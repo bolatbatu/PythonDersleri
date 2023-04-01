@@ -1,3 +1,5 @@
+calisan_listesi = []
+
 class Calisan:
     sirket = "Barben Co."
     def __init__(self, isim, soyisim, yas, maas, pozisyon):
@@ -11,8 +13,6 @@ class Calisan:
         return f"{self.isim} {self.soyisim}"
 
 class calisanlar(Calisan):
-
-    calisan_listesi = []
 
     def calisan_ekle():
         isim = input("İsim: ")
