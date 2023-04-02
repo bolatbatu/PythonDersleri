@@ -5,14 +5,14 @@ class Tas:
         
 class Piyon(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♟")
+        super().__init__(renk, "\033[30m♟")
 class Piyon2(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "♙")
+       super().__init__(renk, "♙")
 
 class Vezir(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♛")
+        super().__init__(renk, "\033[30m♛")
 
 class Vezir2(Tas):
     def __init__(self, renk):
@@ -20,7 +20,7 @@ class Vezir2(Tas):
 
 class Sah(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♚")
+        super().__init__(renk, "\033[30m♚")
 
 class Sah2(Tas):
     def __init__(self, renk):
@@ -28,7 +28,7 @@ class Sah2(Tas):
 
 class Kale(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♜")
+        super().__init__(renk, "\033[30m♜")
 
 class Kale2(Tas):
     def __init__(self, renk):
@@ -36,7 +36,7 @@ class Kale2(Tas):
 
 class Fil(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♝")
+        super().__init__(renk, "\033[30m♝")
 
 class Fil2(Tas):
     def __init__(self, renk):
@@ -44,7 +44,7 @@ class Fil2(Tas):
 
 class At(Tas):
     def __init__(self, renk):
-        super().__init__(renk, "\033[31m♞")
+        super().__init__(renk, "\033[30m♞")
 
 class At2(Tas):
     def __init__(self, renk):
