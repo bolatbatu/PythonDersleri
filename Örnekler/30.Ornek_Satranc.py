@@ -71,14 +71,14 @@ class Pawn(Piece):
         direction = -1 if self.color == "black" else 1
         if end_x == start_x + direction and end_y == start_y and board[end_x][end_y] is None:
             return True
-        if (
+        elif (
             end_x == start_x + direction
             and abs(end_y - start_y) == 1
             and board[end_x][end_y] is not None
             and board[end_x][end_y].color != self.color
         ):
             return True
-        if (
+        elif (
             start_x == 1
             and end_x == start_x + direction * 2
             and end_y == start_y
@@ -86,7 +86,7 @@ class Pawn(Piece):
             and board[start_x + direction][end_y] is None
         ):
             return True
-        if (
+        elif (
             start_x == 6
             and end_x == start_x + direction * 2
             and end_y == start_y

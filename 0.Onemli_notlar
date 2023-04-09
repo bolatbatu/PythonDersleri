@@ -371,6 +371,28 @@ self.__ad _ ad                         Erişimi kısıtlar. Erişim için fonksi
 
 def ad_erisim(self):                   Dışarıdan erişilmesi için gerekli olan komut dizimidir.
     return self.__exam1
+--------------------------Class-Special--------------------------(23.Class_Special_methods)
+__class__                              Hangi classtan üretildiği gösterilir.
+__doc__                                Üç tırnak ile yazılan çok satırlı yorumları gösterir.("""selam""" gibi.)
+__del__                                Veri silmesine yarar.(k1.__del__(ad) ismi siler)
+__str__                                String olarak çalıştırır.(def __str__ şeklinde kullanılır.)
+__ge__                                 <= great equal ifadelerin nasıl davranacağını gösterir.
+__getattribute__                       Gözlenmesini sağlar.
+__hash__                               Belli bir algoritmaya göre hash'ler. Hash ise belli bir algoritmaya göre şifreleme.
+__init_subclass__                      Üst classta olmayan ama alt clasta olmasını istediğimiz şeyler için kullanılır.
+__le__                                 >= less equal ifadelerin nasıl davranağını gösterir.
+__module__                             Nerede olduğunu gösterir. Bulunduğu yerden çağırırsan(__main__) Eğer import ile çekilirse yani dışarıdan çağırılırsa nerden çekildiğini de gösterir.(örnek olarak 14.Git)
+__ne__                                 != not equal ifadelerinin nasıl davranacağını gösterir.
+__new__                                __init__'ten önce çalışır. Nasıl bir obje olacağına karar vermek için kullanıp özeleştirilmesine yarar. Dosya bütünlüğünü bozabilir.*
+__delattr__                            Veri silmek için kullanılır. Dosya bütünlüğünü bozabilir.*
+__repr__                               Terminal üzerinde kullanışlıdır. Kitapçık gibi bilgilendirme işine yarar.
+__setattr__                            Ayarlamak için kullanılır. __getattribute__'e göre getirmesi yerine ayarlamasını sağlar
+__sizeof__                             Kullanım boyutunu sınıflandırır.
+__subclasshook__(cls,sub)
+__subclasscheck__(cls,k1)              Alt class olup olmadığını True/False ile döndürür.
+__weakref__                            Oluşturulan bir nesneyi. Optimize etmeye yarar ve verilerin şişirilmesini sağlar. eski bilgileri kurtarır ve siler.
+------------------------------------------------------------------
+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           (Openai key)
 
 ------------------------------Git---------------------------------
 git config --global user.name Batu     Git yapılandırma.
