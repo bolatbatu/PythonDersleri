@@ -13,6 +13,6 @@ print(response)
 text= response.choices[0].text.replace("\n","")
 print(text)
 tts = gTTS(text=text,lang="tr")
-tts.save("savefile.mp3")
-os.system("savefile.mp3")
+tts.save("24.3.Openai.mp3")
+os.system("24.3.Openai.mp3")
 
