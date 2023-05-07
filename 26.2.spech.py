@@ -8,7 +8,7 @@ model_path = "dil_modeli.pt"
 model = torch.load(model_path)
 
 # OpenAI ChatGPT API anahtarını ayarlama
-openai.api_key = "your_api_key_here"
+openai.api_key = "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"
 
 # Ses tanıma için mikrofonu ayarlama
 r = sr.Recognizer()

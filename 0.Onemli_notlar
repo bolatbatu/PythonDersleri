@@ -510,6 +510,14 @@ On_IBlue="\[\033[0;104m\]"    # Blue
 On_IPurple="\[\033[10;95m\]"  # Purple
 On_ICyan="\[\033[0;106m\]"    # Cyan
 On_IWhite="\[\033[0;107m\]"   # White
+------------------------------Venv-------------------------------
+Venv genel olarak python sürümlerinin karışması ve sürüm değiştirildiğinde yapılması gerek pip install gibi komutların kolaylığını sağlamaktadır.
+cmd üzerinden çalışmaktadır.
+python -m venv .                       Olduğun konumda venv oluşturur.
+kütüphane klasörünün içinde mevcut pip'ler bulunur.
+pip freeze                             Mevcut yüklü pipleri gösterir.
+python==3.7                            Python'un 3.7 Sürümünü yükler.
+.\env\Scripts\activate                 env içine girer.
 ----------------------Control Komut Listesi----------------------
 ctrl+a                                 Tümünü seç
 ctrl+z                                 Geri al

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oy Verme Uygulaması</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Oy Verme Uygulaması</h1>
+	<form onsubmit="submitVote(event)">
+		<label>
+			<input type="radio" name="vote" value="option1">
+			CHP
+		</label>
+		<label>
+			<input type="radio" name="vote" value="option2">
+			MHP
+		</label>
+		<label>
+			<input type="radio" name="vote" value="option3">
+			AKP
+		</label>
+		<button type="submit">Oy Ver</button>
+	</form>
+	<p>Oy sayısı:</p>
+	<ul id="voteCount">
+		<li id="voteCount1">0</li>
+		<li id="voteCount2">0</li>
+		<li id="voteCount3">0</li>
+	</ul>
+	<p>En fazla oy alan seçenek: <span id="maxVote"></span></p>
+	<script>
+		const voteCounts = [0, 0, 0]; // her bir seçenek için oy sayısı başlangıçta 0 olarak ayarlandı
+		const voteCountElements = [
+			document.getElementById("voteCount1"),
+			document.getElementById("voteCount2"),
+			document.getElementById("voteCount3")
+		];
+		const maxVoteElement = document.getElementById("maxVote");
+
+		function submitVote(event) {
+			event.preventDefault(); // sayfanın yenilenmesini engellemek için form gönderimini engelle
+			const selectedOption = document.querySelector('input[name="vote"]:checked');
+			if (selectedOption) {
+				const vote = selectedOption.value;
+				const index = parseInt(vote[vote.length - 1]) - 1;
+				voteCounts[index]++; // ilgili seçeneğin oy sayısını artır
+				voteCountElements[index].innerText = voteCounts[index]; // oy sayısını görüntüle
+				maxVoteElement.innerText = getMaxVote(); // en fazla oy alan seçeneği güncelle
+				// burada sunucuya oy veri gönderimi yapılabilir
+			} else {
+				alert("Lütfen bir parti seçin!");
+			}
+		}
+
+		function getMaxVote() {
+		let maxCount = 0;
+		let maxIndex = 0;
+		for (let i = 0; i < voteCounts.length; i++) {
+			if (voteCounts[i] > maxCount) {
+				maxCount = voteCounts[i];
+				maxIndex = i;
+			}
+		}
+		switch (maxIndex) {
+			case 0:
+				return "CHP";
+			case 1:
+				return "MHP";
+			case 2:
+				return "AKP";
+			default:
+				return "";
+		}
+	}
+</script>
+
+		
