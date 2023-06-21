@@ -536,3 +536,6 @@ cd C:\Users\....                       Cmd üzerinden dosya değiştirir. Açıl
 ls                                     Dosyanın içeriğini listeler.(Powershell ve Linux için.)
 dir                                    Cmd üzerinden dosyayı listeler.
 clear                                  Terminali temizler.
+
+cd dosya adı                           Dosyayı seçer.
+code .                                 Dosyayı farkı sayfada açar.

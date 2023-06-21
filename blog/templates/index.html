@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Sitesi</title>
+</head>
+<body>
+  <h1>Blog Sitesi</h1>
+  {% if goster_bloklar %}
+    <h2>Tüm Bloglar</h2>
+    <ul>
+      {% for baslik, icerik in bloglar.items() %}
+        <li>
+          <h3>{{ baslik }}</h3>
+          <p>{{ icerik }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2>Yeni Blog Gönder</h2>
+    <form action="/blog/gonder" method="POST">
+      <label for="baslik">Başlık:</label>
+      <input type="text" id="baslik" name="baslik" required><br><br>
+
+      <label for="icerik">İçerik:</label>
+      <textarea id="icerik" name="icerik" required></textarea><br><br>
+
+      <input type="submit" value="Gönder">
+    </form>
+
+    <h2>Blog Sil</h2>
+    <form action="/blog/sil" method="POST">
+      <label for="sil_baslik">Silinecek Blog Başlığı:</label>
+      <input type="text" id="sil_baslik" name="sil_baslik" required><br><br>
+
+      <input type="submit" value="Sil">
+    </form>
+
+    <a href="/cikis">Çıkış Yap</a>
+  {% else %}
+    <h2>Giriş Yap</h2>
+    <form action="/giris" method="POST">
+      <label for="giris_ad">Kullanıcı Adı:</label>
+      <input type="text" id="giris_ad" name="giris_ad" required><br><br>
+
+      <label for="giris_sifre">Şifre:</label>
+      <input type="password" id="giris_sifre" name="giris_sifre" required><br><br>
+
+      <input type="submit" value="Giriş Yap">
+    </form>
+
+    <h2>Kayıt Ol</h2>
+    <form action="/kaydet" method="POST">
+      <label for="ad">Ad:</label>
+      <input type="text" id="ad" name="ad" required><br><br>
+
+      <label for="kayit_sifre">Şifre:</label>
+      <input type="password" id="kayit_sifre" name="kayit_sifre" required><br><br>
+
+      <input type="submit" value="Kayıt Ol">
+    </form>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Yap</title>
+</head>
+<body>
+  <h1>Giriş Yap</h1>
+  {% if hata_mesaji %}
+    <p style="color: red;">{{ hata_mesaji }}</p>
+  {% endif %}
+  <form action="/giris" method="POST">
+    <label for="giris_ad">Kullanıcı Adı:</label>
+    <input type="text" id="giris_ad" name="giris_ad" required><br><br>
+
+    <label for="giris_sifre">Şifre:</label>
+    <input type="password" id="giris_sifre" name="giris_sifre" required><br><br>
+
+    <input type="submit" value="Giriş Yap">
+  </form>
+
+  <p>Kayıtlı değil misiniz? <a href="/">Kayıt Ol</a></p>
+</body>
+</html>
