@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .post h2 {
+            margin-bottom: 5px;
+        }
+        .post p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Create account</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to the Blog</h1>
+    <h2>Create a New Post</h2>
+    <form action="/" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" required>
+        <br>
+        <label for="content">Content:</label>
+        <textarea name="content" rows="4" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Recent Posts</h2>
+    {% for post in posts %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <a href="{{ url_for('view_post', post_id=post.id) }}">Read more</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
